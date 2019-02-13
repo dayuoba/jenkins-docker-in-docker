@@ -6,11 +6,19 @@ this is a Dockerfile wraps the jenkins, as the offical image does not deal with 
 
 clone this repo anywhere you'd like, run 
 
-```Dockerfile
+**Build**
+
+```shell
+docker build -t your_builded_image .
+```
+
+**Run**
+
+```shell
 docker run -d --name jenkins \
 	-p 8080:8080 -p 50000:50000 \ 
 	-v /var/run/docker.sock:/var/run/docker.sock \
-	-v jenkins_home:/var/lib/jenkins_home
+	-v jenkins_home:/var/jenkins_home
 	your_builded_image
 ```
 
