@@ -2,7 +2,7 @@
 
 this is a Dockerfile wraps the jenkins, as the offical image does not deal with the solution of docker-in-docker pipeline, if you just run official image you will not be able to run docker jobs in pipeline
 
-## Useage
+## Usage
 
 clone this repo anywhere you'd like, run 
 
@@ -23,5 +23,7 @@ docker run -d --name jenkins \
 * if your host's docker version isn't compatible with the one in jenkins container you should change this Dockerfile to let it install the compatible docker version
 
 ## links
+* [official doc](https://github.com/jenkinsci/docker/blob/master/README.md)
 
-https://medium.com/@manav503/how-to-build-docker-images-inside-a-jenkins-container-d59944102f30
+* [solution i searched](https://medium.com/@manav503/how-to-build-docker-images-inside-a-jenkins-container-d59944102f30)
+
