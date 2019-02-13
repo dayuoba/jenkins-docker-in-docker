@@ -1,6 +1,6 @@
 # A docker-in-docker jenkins Dockerfile
 
-this is a Dockerfile wraps the jenkins, as the offical image does not deal with the solution of docker-in-docker pipeline, if you just run official image you will not be able to run docker jobs in pipeline
+this is a Dockerfile wraps the jenkins's official docker image `jenkins/jenkins:lts`, as the offical image does not deal with the solution of docker-in-docker pipeline, if you just run official image you will not be able to run docker jobs in pipeline
 
 ## Usage
 
@@ -26,7 +26,7 @@ docker run -d --name jenkins \
 
 * you should have docker installed on your host
 
-* you should create a volume for this image like the `jenkins_home` above, whichhas be mentioned on the official doc
+* you should create a volume for this image like the `jenkins_home` above, which has been mentioned on the official doc
 
 * if your host's docker version isn't compatible with the one in jenkins container you should change this Dockerfile to let it install the compatible docker version
 
